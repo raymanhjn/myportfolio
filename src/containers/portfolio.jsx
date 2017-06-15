@@ -23,14 +23,20 @@ class Portfolio extends Component {
 	}];
 		this.renderImage = this.renderImage.bind(this);
 		this.modalClose = this.modalClose.bind(this);
+		this.modalOpen = this.modalOpen.bind(this);
 	}
 
 	renderImage() {
 		return this.images.map((image) => {
 			return <PortofolioItem	
 					key={image.image_url} 
-					image_url={image.image_url}/>
+					image_url={image.image_url}
+					openModal={this.modalOpen}/>
 		});
+	}
+
+	modalOpen() {
+		this.props.openModal();
 	}
 
 	modalClose() {
