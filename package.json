@@ -36,6 +36,7 @@
     "react": "^0.14.3",
     "react-addons-css-transition-group": "^15.5.2",
     "react-dom": "^0.14.3",
+    "react-modal": "^1.9.4",
     "react-redux": "4.3.0",
     "react-router": "^2.0.1",
     "react-sparklines": "^1.6.0",

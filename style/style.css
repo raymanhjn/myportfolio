@@ -50,7 +50,6 @@ hr.star-primary:after {
 }
 
 .navbar-custom {
-	  background: #2C3E50;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     text-transform: uppercase;
     border: none;
@@ -58,16 +57,18 @@ hr.star-primary:after {
 
 .bigbar {
   padding: 15px 0;
-  -webkit-transition: padding 0.5s;
-  -moz-transition: padding 0.5s;
-  transition: padding 0.5s;
+  background: #18BC9C;
+  -webkit-transition: padding 0.5s,background 0.5s;
+  -moz-transition: padding 0.5s,background 0.5s;
+  transition: padding 0.5s,background 0.5s;
 }
 
 .smallbar {
     padding:0;
-    -webkit-transition: padding 0.5s;
-    -moz-transition: padding 0.5s;
-    transition: padding 0.5s;
+    background: #2C3E50;
+    -webkit-transition: padding 0.5s,background 0.5s;
+    -moz-transition: padding 0.5s,background 0.5s;
+    transition: padding 0.5s,background 0.5s;
 }
 
 
@@ -159,4 +160,8 @@ header img {
 
 .caption .caption-content i {
   margin-top: -12px;
+}
+
+.portofolio-item .caption {
+  cursor: pointer;
 }
