@@ -53,6 +53,7 @@ hr.star-primary:after {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     text-transform: uppercase;
     border: none;
+    z-index:99;
 }
 
 .bigbar {
@@ -164,4 +165,47 @@ header img {
 
 .portofolio-item .caption {
   cursor: pointer;
+}
+
+.modal-close {
+  position: relative;
+  right: 20px;
+  float: right;
+  font-size: 4em;
+  cursor: pointer;
+}
+
+.myModal {
+  position: fixed;
+  top: 30%;
+  left: 30%;
+  right: 30%;
+  bottom: 30%;
+  background: #fff;
+  border: none;
+}
+
+.myModal_after-open{
+  position: fixed;
+  top: 10%;
+  left: 10%;
+  right: 10%;
+  bottom: 10%;
+  background: #fff;
+  transition: all ease 1s;
+  overflow: hidden;
+}
+
+.myModal .container {
+  margin-top: 30px;
+}
+
+.myModal .img-thumbnail{
+  display: block;
+  margin:20px auto;
+  width: 600px;
+}
+
+.myModal h1,h2{
+  text-align: center;
 }
